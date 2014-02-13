@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html>	
+
+  <head>   
+    <title>Visit Cork - Fine Dining</title>
+    <meta name="description" content="Cork City's number one tourism guide. Find accommodation, upcoming events, pubs, clubs and restaurants. Connect with us at Visit Cork!">
+    <link href="css/responsive-calendar.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" type="text/css" href="css/index_style.css">
+     <link href='http://fonts.googleapis.com/css?family=Economica' rel='stylesheet' type='text/css'>
+    <!-- Bootstrap -->
+    <!-- Respomsive slider -->
+    
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/responsive-calendar.js"></script>
+    <script src="js/function.js"></script>
+  </head>
+  <body>
+  	<header>
+      <a href ="index.html"><img id="logo" src="img/logo.png"><a>
+        <div id="search-menu">
+           <a href="https://www.facebook.com/pages/Visit-Cork/591174030953274"><img src="img/facebook-red-small.png"></a>
+           <a href="https://twitter.com/Visit_Cork"><img src="img/twitter-red-small.png"></a>
+            <a href="http://www.pinterest.com/visitcork/"><img src="img/pinterest-red-small.png"></a>
+             <a href="#"><img src="img/google-red-small.png"></a>
+           <!-- Begin FusionBot.com site search engine code -->
+<form name="fbsearch" method="get" action="http://ss621.fusionbot.com/b/q" style="margin:0;">
+  <div id="search-field" align="right"><font size="2" face="arial"><a href="http://www.fusionbot.com" target="_blank"></a></font><br /> 
+  <input placeholder=" SEARCH" id="search-box" type="text" name="keys" size="15"><input id="go-search" type="submit" value="SEARCH">
+ <br/>
+  
+  <input type="hidden" name="sitenbr" value="162501249">
+  </div>
+</form> 
+<!-- End FusionBot.com site search engine code -->
+        </div>
+      <nav>
+        <ul>
+          <a onmouseover="showBarsMenu();" onmouseout="hideBarsMenu();" href="bars-clubs.html"><li>BARS/CLUBS</li></a>
+          <a onmouseover="showStayMenu();" onmouseout="hideStayMenu();" href="stay.html"><li>STAY</li></a>
+          <a onmouseover="showDineMenu();" onmouseout="hideDineMenu();" href="dine.html"><li style="color:#C1272D;">DINE</li></a>
+          <a onmouseover="showEventsMenu();" onmouseout="hideEventsMenu();" href="events.html"><li>EVENTS</li></a>
+          <a onmouseover="showTodoMenu();" onmouseout="hideTodoMenu();" href="todo.html"><li>TO DO</li></a>
+          <a href="#"><li>CONTACTS</li></a>
+        </ul>
+      </nav>
+
+      <div id="mobile-menu" onmouseover="displayMobileMenu();" onmouseout="hideMobileMenu();">
+        <div class="icon-bars"></div>
+        <div class="icon-bars"></div>
+        <div class="icon-bars"></div>
+      </div>
+      <div id="mobile-dropdown" onmouseover="displayMobileMenu();" onmouseout="hideMobileMenu();">
+          <ul>
+            <a href="bars-clubs.html"><li>BARS/CLUBS</li></a>
+            <a href="stay.html"><li>STAY</li></a>
+            <a style="color:#999;" href="dine.html"><li>DINE</li></a>
+            <a href="events.html"><li>EVENTS</li></a>
+            <a  href="todo.html"><li>TO DO</li></a>
+            <a href="#"><li>CONTACTS</li></a>
+
+          </ul>
+      </div>
+      <div onmouseover="showBarsMenu();" onmouseout="hideBarsMenu();" id="quick-menu">
+        <div class="recommended">
+          <h1>RECOMMENDED</h1>
+          <div class="thumb" onmouseover="pullOutMenu();" onmouseout="menuRetreat();">
+             <img src="img/anbrog.jpg" onclick="gotoBrog();">
+             <div class="pull-out-text">
+                <div class="pull-out-text-box"><h4>An Brog</h4><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed adipiscing est ut dui posuere, et semper est feugiat. Pellentesque ultricies, elit in ullamcorper semper, nisl turpis eleifend lorem, quis elementum est feugiat.</p></div>
+                <img onmouseover="showShareButtons();" onmouseout="hideShareButtons();" id="share" src="img/share.png">
+                <div onmouseover="showShareButtons();" onmouseout="hideShareButtons();"class="share-buttons">
+                  <button class="facebook"><img src="img/facebook.png"></button>
+                  <button class="twitter"><img src="img/twitter.png"></button>
+                  <button class="pinterest"><img src="img/pinterest.png"></button>
+                  <button class="google"><img src="img/google.png"></button>
+                 </div>
+             </div>
+             <div class="pull-out">
+                
+             </div>
+          </div>
+          <div class="thumb" onmouseover="pullOutMenu2();" onmouseout="menuRetreat2();">
+             <img src="img/sober2.jpg" onclick="gotoSober();">
+             <div class="pull-out-text2">
+                <div class="pull-out-text-box2"><h4>Sober Lane</h4><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed adipiscing est ut dui posuere, et semper est feugiat. Pellentesque ultricies, elit in ullamcorper semper, nisl turpis eleifend lorem, quis elementum est feugiat.</p></div>
+                 <img onmouseover="showShareButtons();" onmouseout="hideShareButtons();" id="share" src="img/share.png">
+                 <div onmouseover="showShareButtons();" onmouseout="hideShareButtons();"class="share-buttons">
+                  <button class="facebook"><img src="img/facebook.png"></button>
+                  <button class="twitter"><img src="img/twitter.png"></button>
+                  <button class="pinterest"><img src="img/pinterest.png"></button>
+                  <button class="google"><img src="img/google.png"></button>
+                 </div>
+             </div>
+             <div class="pull-out">
+                
+             </div>
+          </div>
+          <div class="thumb" onmouseover="pullOutMenu3();" onmouseout="menuRetreat3();">
+            <img src="img/electric.jpg" onclick="gotoElectric();">
+            <div class="pull-out-text3">
+                <div class="pull-out-text-box3"><h4>Electric</h4><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed adipiscing est ut dui posuere, et semper est feugiat. Pellentesque ultricies, elit in ullamcorper semper, nisl turpis eleifend lorem, quis elementum est feugiat.</p></div>
+                 <img  onmouseout="hideShareButtons();" onmouseover="showShareButtons();" id="share" src="img/share.png">
+                 <div onmouseover="showShareButtons();" onmouseout="hideShareButtons();"class="share-buttons">
+                  <button class="facebook"><img src="img/facebook.png"></button>
+                  <button class="twitter"><img src="img/twitter.png"></button>
+                  <button class="pinterest"><img src="img/pinterest.png"></button>
+                  <button class="google"><img src="img/google.png"></button>
+                 </div>
+             </div>
+            <div class="pull-out">
+                
+             </div>
+             <div class="pulled-out">
+                
+             </div>
+          </div>
+        </div>
+
+        <div class="row1">
+          <h1>PUBS</h1>
+           <ul>
+             <a href="AnBrog.html"><li>An Brog</li></a>
+             <a href="electric.html"><li>Electric</li></a>
+             <a href="sober.html"><li>Sober Lane</li></a>
+             <a href="AnBrog.html"><li>An Brog</li></a>
+             <a href="electric.html"><li>Electric</li></a>            
+           </ul>
+           <div class="show-all"><h4>Show All</h4><div class="show-point"></div></div>
+        </div>
+
+        <div class="row2">
+
+        <h1>NIGHTCLUBS</h1>
+           <ul>
+             <a href="#"><li>Voodoo Rooms</li></a>
+             <a href="#"><li>The Savoy</li></a>
+             <a href="#"><li>The Pavillion</li></a>
+             <a href="#"><li>Voodoo Rooms</li></a>
+             <a href="#"><li>The Savoy</li></a>             
+           </ul>
+            <div class="show-all"><h4>Show All</h4><div class="show-point"></div></div>
+        </div>
+
+        <div class="row3"></div>
+
+      </div>
+
+      <div onmouseover="showStayMenu();" onmouseout="hideStayMenu();" id="quick-menu2">
+        <div class="recommended">
+          <h1>RECOMMENDED</h1>
+          <div class="thumb" onmouseover="pullOutMenu();" onmouseout="menuRetreat();">
+             <img src="img/metropole.jpg">
+             <div class="pull-out-text">
+                <div class="pull-out-text-box"><h4>Gresham Metropole</h4><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed adipiscing est ut dui posuere, et semper est feugiat. Pellentesque ultricies, elit in ullamcorper semper, nisl turpis eleifend lorem, quis elementum est feugiat.</p></div>
+                <img onmouseover="showShareButtons();" onmouseout="hideShareButtons();" id="share" src="img/share.png">
+                <div onmouseover="showShareButtons();" onmouseout="hideShareButtons();"class="share-buttons">
+                  <button class="facebook"><img src="img/facebook.png"></button>
+                  <button class="twitter"><img src="img/twitter.png"></button>
+                  <button class="pinterest"><img src="img/pinterest.png"></button>
+                  <button class="google"><img src="img/google.png"></button>
+                 </div>
+             </div>
+             <div class="pull-out">
+                
+             </div>
+          </div>
+          <div class="thumb" onmouseover="pullOutMenu2();" onmouseout="menuRetreat2();">
+             <img src="img/river-lee.jpg">
+             <div class="pull-out-text2">
+                <div class="pull-out-text-box2"><h4>The River Lee Hotel</h4><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed adipiscing est ut dui posuere, et semper est feugiat. Pellentesque ultricies, elit in ullamcorper semper, nisl turpis eleifend lorem, quis elementum est feugiat.</p></div>
+                 <img onmouseover="showShareButtons();" onmouseout="hideShareButtons();" id="share" src="img/share.png">
+                 <div onmouseover="showShareButtons();" onmouseout="hideShareButtons();"class="share-buttons">
+                  <button class="facebook"><img src="img/facebook.png"></button>
+                  <button class="twitter"><img src="img/twitter.png"></button>
+                  <button class="pinterest"><img src="img/pinterest.png"></button>
+                  <button class="google"><img src="img/google.png"></button>
+                 </div>
+             </div>
+             <div class="pull-out">
+                
+             </div>
+          </div>
+          <div class="thumb" onmouseover="pullOutMenu3();" onmouseout="menuRetreat3();">
+            <img src="img/bru.jpg">
+            <div class="pull-out-text3">
+                <div class="pull-out-text-box3"><h4>The Bru</h4><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed adipiscing est ut dui posuere, et semper est feugiat. Pellentesque ultricies, elit in ullamcorper semper, nisl turpis eleifend lorem, quis elementum est feugiat.</p></div>
+                 <img  onmouseout="hideShareButtons();" onmouseover="showShareButtons();" id="share" src="img/share.png">
+                 <div onmouseover="showShareButtons();" onmouseout="hideShareButtons();"class="share-buttons">
+                  <button class="facebook"><img src="img/facebook.png"></button>
+                  <button class="twitter"><img src="img/twitter.png"></button>
+                  <button class="pinterest"><img src="img/pinterest.png"></button>
+                  <button class="google"><img src="img/google.png"></button>
+                 </div>
+             </div>
+            <div class="pull-out">
+                
+             </div>
+             <div class="pulled-out">
+                
+             </div>
+          </div>
+        </div>
+
+        <div class="row1">
+          <h1>HOTELS</h1>
+           <ul>
+             <a href="#"><li>Gresham Metropole</li></a>
+             <a href="#"><li>The River Lee Hotel</li></a>
+             <a href="#"><li>Cork International</li></a>
+             <a href="#"><li>The Imperial Hotel</li></a>
+             <a href="#"><li>Jurys Hotel</li></a>            
+           </ul>
+           <div class="show-all"><h4>Show All</h4><div class="show-point"></div></div>
+        </div>
+
+        <div class="row2">
+
+        <h1>HOSTELS/B&B</h1>
+           <ul>
+             <a href="#"><li>The Bru</li></a>
+             <a href="#"><li>Kinlay House</li></a>
+             <a href="#"><li>The Long Point</li></a>
+             <a href="#"><li>The Bru</li></a>
+             <a href="#"><li>Kinlay House</li></a>             
+           </ul>
+            <div class="show-all"><h4>Show All</h4><div class="show-point"></div></div>
+        </div>
+
+        <div class="row3"></div>
+
+      </div>
+
+       <div onmouseover="showDineMenu();" onmouseout="hideDineMenu();" id="quick-menu3">
+        <div class="recommended">
+          <h1>RECOMMENDED</h1>
+          <div class="thumb" onmouseover="pullOutMenu();" onmouseout="menuRetreat();">
+             <img src="img/libertygrill.jpg">
+             <div class="pull-out-text">
+                <div class="pull-out-text-box"><h4>Liberty Grill</h4><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed adipiscing est ut dui posuere, et semper est feugiat. Pellentesque ultricies, elit in ullamcorper semper, nisl turpis eleifend lorem, quis elementum est feugiat.</p></div>
+                <img onmouseover="showShareButtons();" onmouseout="hideShareButtons();" id="share" src="img/share.png">
+                <div onmouseover="showShareButtons();" onmouseout="hideShareButtons();"class="share-buttons">
+                  <button class="facebook"><img src="img/facebook.png"></button>
+                  <button class="twitter"><img src="img/twitter.png"></button>
+                  <button class="pinterest"><img src="img/pinterest.png"></button>
+                  <button class="google"><img src="img/google.png"></button>
+                 </div>
+             </div>
+             <div class="pull-out">
+                
+             </div>
+          </div>
+          <div class="thumb" onmouseover="pullOutMenu2();" onmouseout="menuRetreat2();">
+             <img src="img/cafe-guston1.jpg">
+             <div class="pull-out-text2">
+                <div class="pull-out-text-box2"><h4>Cafe Guston</h4><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed adipiscing est ut dui posuere, et semper est feugiat. Pellentesque ultricies, elit in ullamcorper semper, nisl turpis eleifend lorem, quis elementum est feugiat.</p></div>
+                 <img onmouseover="showShareButtons();" onmouseout="hideShareButtons();" id="share" src="img/share.png">
+                 <div onmouseover="showShareButtons();" onmouseout="hideShareButtons();"class="share-buttons">
+                  <button class="facebook"><img src="img/facebook.png"></button>
+                  <button class="twitter"><img src="img/twitter.png"></button>
+                  <button class="pinterest"><img src="img/pinterest.png"></button>
+                  <button class="google"><img src="img/google.png"></button>
+                 </div>
+             </div>
+             <div class="pull-out">
+                
+             </div>
+          </div>
+          <div class="thumb" onmouseover="pullOutMenu3();" onmouseout="menuRetreat3();">
+            <img src="img/fish-bar.jpg">
+            <div class="pull-out-text3">
+                <div class="pull-out-text-box3"><h4>Fish Bar</h4><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed adipiscing est ut dui posuere, et semper est feugiat. Pellentesque ultricies, elit in ullamcorper semper, nisl turpis eleifend lorem, quis elementum est feugiat.</p></div>
+                 <img  onmouseout="hideShareButtons();" onmouseover="showShareButtons();" id="share" src="img/share.png">
+                 <div onmouseover="showShareButtons();" onmouseout="hideShareButtons();"class="share-buttons">
+                  <button class="facebook"><img src="img/facebook.png"></button>
+                  <button class="twitter"><img src="img/twitter.png"></button>
+                  <button class="pinterest"><img src="img/pinterest.png"></button>
+                  <button class="google"><img src="img/google.png"></button>
+                 </div>
+             </div>
+            <div class="pull-out">
+                
+             </div>
+             <div class="pulled-out">
+                
+             </div>
+          </div>
+        </div>
+
+        <div class="row1">
+          <h1>RESTAURANTS</h1>
+           <ul>
+             <a href="#"><li>Liberty Grill</li></a>
+             <a href="#"><li>Cafe Guston</li></a>
+             <a href="#"><li>Fish Bar</li></a>
+             <a href="#"><li>Currans</li></a>
+             <a href="#"><li>Boardwalk</li></a>            
+           </ul>
+           <div class="show-all"><h4>Show All</h4><div class="show-point"></div></div>
+        </div>
+
+        <div class="row2">
+
+        <h1>PUB GRUB</h1>
+           <ul>
+             <a href="#"><li>Sober Lane</li></a>
+             <a href="#"><li>Bodega</li></a>
+             <a href="#"><li>Dan Brownes</li></a>
+             <a href="#"><li>The Long Valley</li></a>
+             <a href="#"><li>The Sober Lane</li></a>             
+           </ul>
+            <div class="show-all"><h4>Show All</h4><div class="show-point"></div></div>
+        </div>
+
+        <div class="row3"></div>
+
+      </div>
+
+      <div onmouseover="showEventsMenu();" onmouseout="hideEventsMenu();" id="quick-menu4">
+        <div class="recommended">
+          <h1>RECOMMENDED</h1>
+          <div class="thumb" onmouseover="pullOutMenu();" onmouseout="menuRetreat();">
+             <img src="img/munster.jpg">
+             <div class="pull-out-text">
+                <div class="pull-out-text-box"><h4>Heineken Cup</h4><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed adipiscing est ut dui posuere, et semper est feugiat. Pellentesque ultricies, elit in ullamcorper semper, nisl turpis eleifend lorem, quis elementum est feugiat.</p></div>
+                <img onmouseover="showShareButtons();" onmouseout="hideShareButtons();" id="share" src="img/share.png">
+                <div onmouseover="showShareButtons();" onmouseout="hideShareButtons();"class="share-buttons">
+                  <button class="facebook"><img src="img/facebook.png"></button>
+                  <button class="twitter"><img src="img/twitter.png"></button>
+                  <button class="pinterest"><img src="img/pinterest.png"></button>
+                  <button class="google"><img src="img/google.png"></button>
+                 </div>
+             </div>
+             <div class="pull-out">
+                
+             </div>
+          </div>
+          <div class="thumb" onmouseover="pullOutMenu2();" onmouseout="menuRetreat2();">
+             <img src="img/hurling.jpg">
+             <div class="pull-out-text2">
+                <div class="pull-out-text-box2"><h4>Munster Final</h4><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed adipiscing est ut dui posuere, et semper est feugiat. Pellentesque ultricies, elit in ullamcorper semper, nisl turpis eleifend lorem, quis elementum est feugiat.</p></div>
+                 <img onmouseover="showShareButtons();" onmouseout="hideShareButtons();" id="share" src="img/share.png">
+                 <div onmouseover="showShareButtons();" onmouseout="hideShareButtons();"class="share-buttons">
+                  <button class="facebook"><img src="img/facebook.png"></button>
+                  <button class="twitter"><img src="img/twitter.png"></button>
+                  <button class="pinterest"><img src="img/pinterest.png"></button>
+                  <button class="google"><img src="img/google.png"></button>
+                 </div>
+             </div>
+             <div class="pull-out">
+                
+             </div>
+          </div>
+          <div class="thumb" onmouseover="pullOutMenu3();" onmouseout="menuRetreat3();">
+            <img src="img/opera-house.jpg">
+            <div class="pull-out-text3">
+                <div class="pull-out-text-box3"><h4>La Sonata</h4><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed adipiscing est ut dui posuere, et semper est feugiat. Pellentesque ultricies, elit in ullamcorper semper, nisl turpis eleifend lorem, quis elementum est feugiat.</p></div>
+                 <img  onmouseout="hideShareButtons();" onmouseover="showShareButtons();" id="share" src="img/share.png">
+                 <div onmouseover="showShareButtons();" onmouseout="hideShareButtons();"class="share-buttons">
+                  <button class="facebook"><img src="img/facebook.png"></button>
+                  <button class="twitter"><img src="img/twitter.png"></button>
+                  <button class="pinterest"><img src="img/pinterest.png"></button>
+                  <button class="google"><img src="img/google.png"></button>
+                 </div>
+             </div>
+            <div class="pull-out">
+                
+             </div>
+             <div class="pulled-out">
+                
+             </div>
+          </div>
+        </div>
+
+        <div class="row1">
+          <h1>LIVE SHOWS</h1>
+           <ul>
+             <a href="#"><li>Music</li></a>
+             <a href="#"><li>Theatre</li></a>
+             <a href="#"><li>Opera</li></a>
+             <a href="#"><li>Comedy</li></a>
+             <a href="#"><li>Other</li></a>            
+           </ul>
+           <div class="show-all"><h4>Show All</h4><div class="show-point"></div></div>
+        </div>
+
+        <div class="row2">
+
+        <h1>SPORT</h1>
+           <ul>
+             <a href="#"><li>Hurling</li></a>
+             <a href="#"><li>Football</li></a>
+             <a href="#"><li>Rugby</li></a>
+             <a href="#"><li>Soccer</li></a>
+             <a href="#"><li>Other</li></a>             
+           </ul>
+            <div class="show-all"><h4>Show All</h4><div class="show-point"></div></div>
+        </div>
+
+        <div class="row3"></div>
+
+      </div>
+
+      <div onmouseover="showTodoMenu();" onmouseout="hideTodoMenu();" id="quick-menu5">
+        <div class="recommended">
+          <h1>RECOMMENDED</h1>
+          <div class="thumb" onmouseover="pullOutMenu();" onmouseout="menuRetreat();">
+             <img src="img/mahon-golf.jpg">
+             <div class="pull-out-text">
+                <div class="pull-out-text-box"><h4>Mahon Golf Club</h4><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed adipiscing est ut dui posuere, et semper est feugiat. Pellentesque ultricies, elit in ullamcorper semper, nisl turpis eleifend lorem, quis elementum est feugiat.</p></div>
+                <img onmouseover="showShareButtons();" onmouseout="hideShareButtons();" id="share" src="img/share.png">
+                <div onmouseover="showShareButtons();" onmouseout="hideShareButtons();"class="share-buttons">
+                  <button class="facebook"><img src="img/facebook.png"></button>
+                  <button class="twitter"><img src="img/twitter.png"></button>
+                  <button class="pinterest"><img src="img/pinterest.png"></button>
+                  <button class="google"><img src="img/google.png"></button>
+                 </div>
+             </div>
+             <div class="pull-out">
+                
+             </div>
+          </div>
+          <div class="thumb" onmouseover="pullOutMenu2();" onmouseout="menuRetreat2();">
+             <img src="img/blackwater.jpg">
+             <div class="pull-out-text2">
+                <div class="pull-out-text-box2"><h4>Blackwater Castle</h4><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed adipiscing est ut dui posuere, et semper est feugiat. Pellentesque ultricies, elit in ullamcorper semper, nisl turpis eleifend lorem, quis elementum est feugiat.</p></div>
+                 <img onmouseover="showShareButtons();" onmouseout="hideShareButtons();" id="share" src="img/share.png">
+                 <div onmouseover="showShareButtons();" onmouseout="hideShareButtons();"class="share-buttons">
+                  <button class="facebook"><img src="img/facebook.png"></button>
+                  <button class="twitter"><img src="img/twitter.png"></button>
+                  <button class="pinterest"><img src="img/pinterest.png"></button>
+                  <button class="google"><img src="img/google.png"></button>
+                 </div>
+             </div>
+             <div class="pull-out">
+                
+             </div>
+          </div>
+          <div class="thumb" onmouseover="pullOutMenu3();" onmouseout="menuRetreat3();">
+            <img src="img/opera-house.jpg">
+            <div class="pull-out-text3">
+                <div class="pull-out-text-box3"><h4>Cork Opera House</h4><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed adipiscing est ut dui posuere, et semper est feugiat. Pellentesque ultricies, elit in ullamcorper semper, nisl turpis eleifend lorem, quis elementum est feugiat.</p></div>
+                 <img  onmouseout="hideShareButtons();" onmouseover="showShareButtons();" id="share" src="img/share.png">
+                 <div onmouseover="showShareButtons();" onmouseout="hideShareButtons();"class="share-buttons">
+                  <button class="facebook"><img src="img/facebook.png"></button>
+                  <button class="twitter"><img src="img/twitter.png"></button>
+                  <button class="pinterest"><img src="img/pinterest.png"></button>
+                  <button class="google"><img src="img/google.png"></button>
+                 </div>
+             </div>
+            <div class="pull-out">
+                
+             </div>
+             <div class="pulled-out">
+                
+             </div>
+          </div>
+        </div>
+
+        <div class="row1">
+          <h1>ENTERTAINMENT</h1>
+           <ul>
+             <a href="#"><li>Cork Opera House</li></a>
+             <a href="#"><li>Triskel Arts Center</li></a>
+             <a href="#"><li>The Pavillion</li></a>
+             <a href="#"><li>The Comedy Club</li></a>
+             <a href="#"><li>Other</li></a>            
+           </ul>
+           <div class="show-all"><h4>Show All</h4><div class="show-point"></div></div>
+        </div>
+
+        <div class="row2">
+
+        <h1>OUTDOOR ACTIVITIES</h1>
+           <ul>
+             <a href="#"><li>Sightseeing</li></a>
+             <a href="#"><li>Watersports</li></a>
+             <a href="#"><li>Mahon Golf Club</li></a>
+             <a href="#"><li>Swimming</li></a>
+             <a href="#"><li>Other</li></a>             
+           </ul>
+            <div class="show-all"><h4>Show All</h4><div class="show-point"></div></div>
+        </div>
+
+        <div class="row3"></div>
+
+      </div>
+    </header>
+    <div id="slide-show5">
+       
+    </div>
+
+    <div id="bars-heading"><div id="dine-heading-bg"><h1>PLACES TO EAT</h1></div></div>
+
+    <div id="bars-content">
+
+      <div id="dine1">
+          <img class="option-image" src="img/fish-bar.jpg">
+          <div class="bar1-text"><h1>Fish Bar</h1><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed adipiscing est ut dui posuere, et semper est feugiat. </p></div> 
+          <img onmouseover="showShareButtons1();" onmouseout="hideShareButtons1();" id="share2" src="img/share.png">
+           <div onmouseover="showShareButtons1();" onmouseout="hideShareButtons1();"class="share-buttons1">
+                  <button class="facebook"><img src="img/facebook.png"></button>
+                  <button class="twitter"><img src="img/twitter.png"></button>
+                  <button class="pinterest"><img src="img/pinterest.png"></button>
+                  <button class="google"><img src="img/google.png"></button>
+                 </div>           
+      </div>
+
+      <div id="dine2">
+          <img class="option-image" src="img/libertygrill.jpg">
+          <div class="bar1-text"><h1>Liberty Grill</h1><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed adipiscing est ut dui posuere, et semper est feugiat. </p></div> 
+           <img onmouseover="showShareButtons2();" onmouseout="hideShareButtons2();" id="share2" src="img/share.png">
+           <div onmouseover="showShareButtons2();" onmouseout="hideShareButtons2();"class="share-buttons2">
+                  <button class="facebook"><img src="img/facebook.png"></button>
+                  <button class="twitter"><img src="img/twitter.png"></button>
+                  <button class="pinterest"><img src="img/pinterest.png"></button>
+                  <button class="google"><img src="img/google.png"></button>
+                 </div>                
+      </div>
+
+      <div id="dine3">
+          <img class="option-image" src="img/cafe-guston1.jpg">
+          <div class="bar1-text"><h1>Cafe Guston</h1><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed adipiscing est ut dui posuere, et semper est feugiat. </p></div>  
+          <img onmouseover="showShareButtons3();" onmouseout="hideShareButtons3();" id="share2" src="img/share.png">
+           <div onmouseover="showShareButtons3();" onmouseout="hideShareButtons3();"class="share-buttons3">
+                  <button class="facebook"><img src="img/facebook.png"></button>
+                  <button class="twitter"><img src="img/twitter.png"></button>
+                  <button class="pinterest"><img src="img/pinterest.png"></button>
+                  <button class="google"><img src="img/google.png"></button>
+                 </div>         
+      </div>
+
+      <div id="dine4">
+          <img class="option-image" src="img/boardwalk.jpg">
+          <div class="bar1-text"><h1>Boardwalk</h1><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed adipiscing est ut dui posuere, et semper est feugiat. </p></div>  
+           <img onmouseover="showShareButtons4();" onmouseout="hideShareButtons4();" id="share2" src="img/share.png">
+           <div onmouseover="showShareButtons4();" onmouseout="hideShareButtons4();"class="share-buttons4">
+                  <button class="facebook"><img src="img/facebook.png"></button>
+                  <button class="twitter"><img src="img/twitter.png"></button>
+                  <button class="pinterest"><img src="img/pinterest.png"></button>
+                  <button class="google"><img src="img/google.png"></button>
+                 </div>         
+      </div>
+
+      <div  id="dine5">
+          <img class="option-image" src="img/sober2.jpg">
+          <div class="bar1-text"><h1>Sober Lane</h1><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed adipiscing est ut dui posuere, et semper est feugiat. </p></div>   
+           <img onmouseover="showShareButtons5();" onmouseout="hideShareButtons5();" id="share2" src="img/share.png">
+           <div onmouseover="showShareButtons5();" onmouseout="hideShareButtons5();"class="share-buttons5">
+                  <button class="facebook"><img src="img/facebook.png"></button>
+                  <button class="twitter"><img src="img/twitter.png"></button>
+                  <button class="pinterest"><img src="img/pinterest.png"></button>
+                  <button class="google"><img src="img/google.png"></button>
+                 </div>           
+      </div>
+
+      <div  id="dine6">
+          <img class="option-image" src="img/mexicana.jpg">
+          <div class="bar1-text"><h1>Cafe Mexicana</h1><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed adipiscing est ut dui posuere, et semper est feugiat. </p></div>     
+          <img onmouseover="showShareButtons6();" onmouseout="hideShareButtons6();" id="share2" src="img/share.png">
+           <div onmouseover="showShareButtons6();" onmouseout="hideShareButtons6();"class="share-buttons6">
+                  <button class="facebook"><img src="img/facebook.png"></button>
+                  <button class="twitter"><img src="img/twitter.png"></button>
+                  <button class="pinterest"><img src="img/pinterest.png"></button>
+                  <button class="google"><img src="img/google.png"></button>
+                 </div>        
+      </div>
+
+
+    </div>    
+    
+  
+  </div>
+<div id="places-container">
+  <div id="places-of-interest-bars">
+    <div id="info">
+      <h1>PLACES OF<br>INTEREST</h1>
+      <div class="circle-line"><div class="grid-circles"><h4 style="color:#EFCF01;">G1</h4></div><p class="grid-text">Lorem Ipsum dolor sit amet</p></div>
+      <div class="circle-line"><div class="grid-circles"><h4 style="color:#FE8E98;">G2</h4></div><p class="grid-text">Lorem Ipsum dolor sit amet</p></div>
+      <div class="circle-line"><div class="grid-circles"><h4 style="color:#22B573;">G3</h4></div><p class="grid-text">Lorem Ipsum dolor sit amet</p></div>
+      <div class="circle-line"><div class="grid-circles"><h4 style="color:#3FA9F5;">G4</h4></div><p class="grid-text">Lorem Ipsum dolor sit amet</p></div>
+      <div class="circle-line"><div class="grid-circles"><h4 style="color:#CCCCCC;">G5</h4></div><p class="grid-text">Lorem Ipsum dolor sit amet</p></div>
+      <div class="circle-line"><div class="grid-circles"><h4 style="color:#FE8E98;">G6</h4></div><p class="grid-text">Lorem Ipsum dolor sit amet</p></div>
+      </div>
+    <img src="img/map-grid.png">
+
+  </div>
+
+  <div id="footer2">
+      <div id="footer-container">
+     <div id="column1">
+      <div class="column-heading"><h1>VISIT CORK</h1></div>
+      <ul>
+        <a href="#"><li>Home</li></a>
+        <a href="#"><li>Stay</li></a>
+        <a href="#"><li>Dine</li></a>
+        <a href="#"><li>Events</li></a>
+        <a href="#"><li>To Do</li></a>
+        <a href="#"><li>Contacts</li></a>
+      </ul>
+     </div>
+      <div id="column2">
+      <div class="column-heading"><h1>FIND OUT MORE</h1></div>
+      <ul>
+        <a href="#"><li>About Visit Cork</li></a>
+        <a href="#"><li>Keep Updated</li></a>
+        <a href="#"><li>About Cork City</li></a>
+        <a href="#"><li>FAQs</li></a>
+        <a href="#"><li>Privacy</li></a>
+        <a href="#"><li>Site Map</li></a>
+      </ul>
+     </div>
+
+      <div id="column3">
+       <div class="column-heading"><h1>KEEP UPDATED</h1></div>
+      <ul>
+        <a href="#"><li><img src="img/facebook-icon.png"> &nbsp Facebook</li></a>
+        <a href="#"><li><img src="img/twitter-icon.png"> &nbsp Twitter</li></a>
+        <a href="#"><li><img src="img/pinterest-icon.png"> &nbsp Pinterest</li></a>
+        <a href="#"><li><img src="img/google-icon.png"> &nbsp Google+</li></a>
+        <a href="#"><li><img src="img/flickr-icon.png"> &nbsp Flickr</li></a>
+        <a href="#"><li><img src="img/instagram-icon.png"> &nbsp Instagram</li></a>
+      </ul>
+     </div>
+     </div>
+  </div>
+
+  <script type="text/javascript">
+     
+  </script>
+
+  </body>
+  </html>
