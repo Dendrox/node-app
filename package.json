@@ -1,0 +1,30 @@
+{
+  "name": "Node",
+  "version": "0.0.1",
+  "description": "Express application using jade and stylus",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+
+  "dependencies" : {
+     
+     "express" : "*",
+     "jade" : "*",
+     "nib" : "*",
+     "mongodb" : "*",
+     "monk" : "*"
+
+  },
+
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/Dendrox/node-app.git"
+  },
+  "author": "Rody Kirwan",
+  "license": "GNU",
+  "bugs": {
+    "url": "https://github.com/Dendrox/node-app/issues"
+  },
+  "homepage": "https://github.com/Dendrox/node-app"
+}
